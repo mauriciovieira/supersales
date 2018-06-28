@@ -16,6 +16,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise', '~> 4.4.3'
 gem 'rails_admin', '~> 1.3.0'
 
+gem 'active_record_upsert', '~> 0.9.1'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
