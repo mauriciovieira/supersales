@@ -15,6 +15,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'devise', '~> 4.4.3'
 gem 'rails_admin', '~> 1.3.0'
+gem 'cancancan', '~> 2.2.0'
 
 gem 'active_record_upsert', '~> 0.9.1'
 
