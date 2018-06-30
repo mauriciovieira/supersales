@@ -32,6 +32,8 @@ RailsAdmin.add_extension(:cancancan2, RailsAdmin::Extensions::CanCanCan2, author
 
 RailsAdmin.config do |config|
 
+  config.parent_controller = 'ApplicationController'
+
   ### Popular gems integration
 
   ## == Devise ==
