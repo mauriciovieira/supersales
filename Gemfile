@@ -19,6 +19,8 @@ gem 'cancancan', '~> 2.2.0'
 
 gem 'active_record_upsert', '~> 0.9.1'
 
+gem 'high_voltage', '~> 3.1'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
