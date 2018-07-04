@@ -12,6 +12,7 @@ class Ability
         can :read, Discount, status: :active
         can :manage, SalesItem, user_id: user.id
         can :manage, Address, user_id: user.id
+        can :manage, Sale, user_id: user.id
       elsif user.manager?
         can :manage, :all
       end
