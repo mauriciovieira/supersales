@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_02_202240) do
+ActiveRecord::Schema.define(version: 2018_07_21_203536) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -64,7 +64,7 @@ ActiveRecord::Schema.define(version: 2018_07_02_202240) do
     t.index ["user_id"], name: "index_clients_on_user_id"
   end
 
-  create_table "comissions", force: :cascade do |t|
+  create_table "commissions", force: :cascade do |t|
     t.bigint "sale_id"
     t.decimal "value"
     t.bigint "user_id"
@@ -72,8 +72,8 @@ ActiveRecord::Schema.define(version: 2018_07_02_202240) do
     t.text "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["sale_id"], name: "index_comissions_on_sale_id"
-    t.index ["user_id"], name: "index_comissions_on_user_id"
+    t.index ["sale_id"], name: "index_commissions_on_sale_id"
+    t.index ["user_id"], name: "index_commissions_on_user_id"
   end
 
   create_table "discounts", force: :cascade do |t|
@@ -147,8 +147,8 @@ ActiveRecord::Schema.define(version: 2018_07_02_202240) do
 
   add_foreign_key "addresses", "clients"
   add_foreign_key "clients", "users"
-  add_foreign_key "comissions", "sales"
-  add_foreign_key "comissions", "users"
+  add_foreign_key "commissions", "sales"
+  add_foreign_key "commissions", "users"
   add_foreign_key "sales", "clients"
   add_foreign_key "sales", "discounts"
   add_foreign_key "sales", "users"
