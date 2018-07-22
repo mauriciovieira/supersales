@@ -261,6 +261,7 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise (~> 4.4.3)
+  execjs
   high_voltage (~> 3.1)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
