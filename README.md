@@ -1,7 +1,5 @@
 # supersales
 
-[![Build Status](https://api.cirrus-ci.com/github/mauriciovieira/supersales.svg)](https://cirrus-ci.com/github/mauriciovieira/supersales)
-
 Simple rails 5.2 application using rails_admin, devise, and native rails test setup.
 
 This project is an implementation of [Criando um sistema administrativo completo com rails admin](https://onebitcode.com/course/criando-um-sistema-administrativo-completo-com-rails-admin/) (in Brazilian Portuguese) tutorial.
