@@ -1,7 +1,7 @@
 ######################
 # https://github.com/ledermann/docker-rails/blob/a3d04588d160f15cd4d8b5d81c34b2f9e92a6b1f/Dockerfile#L1
 # Stage: Builder
-FROM ruby:2.4.4-alpine3.7 as Builder
+FROM ruby:2.5.1-alpine3.7 as Builder
 
 ARG FOLDERS_TO_REMOVE
 ARG BUNDLE_WITHOUT
