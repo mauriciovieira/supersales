@@ -1,0 +1,35 @@
+version: '3.4'
+services:
+  db:
+    image: postgres:alpine
+    environment:
+      - POSTGRES_PASSWORD
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  app:
+    build:
+      context: .
+      args:
+        - ADDITIONAL_PACKAGES=nodejs-current
+        - EXECJS_RUNTIME=Node
+        - BUNDLE_WITHOUT=production
+        - RAILS_ENV=test
+    environment:
+      RAILS_ENV: test
+      DB_HOST: db
+      POSTGRES_PASSWORD: catapimba
+      SECRET_KEY_BASE: we-dont-need-a-secret-here
+      DB_USER: postgres
+      DB_PASSWORD: catapimba
+      APP_ADMIN_EMAIL: admin@example.org
+      APP_ADMIN_PASSWORD: secret
+      APP_EMAIL: reply@example.org
+      APP_HOST: example.org
+    ports:
+      - 3000
+    links:
+      - db
+
+volumes:
+  db-data:
