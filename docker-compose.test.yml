@@ -7,11 +7,17 @@ services:
     volumes:
       - db-data:/var/lib/postgresql/data
 
+  selenium:
+    image: selenium/standalone-chrome
+    ports:
+      - 4444:4444
+      - 5900:5900
+
   app:
     build:
       context: .
       args:
-        - ADDITIONAL_PACKAGES=nodejs-current
+        - ADDITIONAL_PACKAGES=nodejs-current chromium chromium-chromedriver
         - EXECJS_RUNTIME=Node
         - BUNDLE_WITHOUT=production
         - RAILS_ENV=test
@@ -20,6 +26,7 @@ services:
       DB_HOST: db
       POSTGRES_PASSWORD: catapimba
       SECRET_KEY_BASE: we-dont-need-a-secret-here
+      SELENIUM_REMOTE_HOST: selenium
       DB_USER: postgres
       DB_PASSWORD: catapimba
       APP_ADMIN_EMAIL: admin@example.org
@@ -30,6 +37,7 @@ services:
       - 3000
     links:
       - db
+      - selenium
 
 volumes:
   db-data:
