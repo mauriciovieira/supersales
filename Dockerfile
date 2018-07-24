@@ -45,7 +45,7 @@ RUN rm -rf $FOLDERS_TO_REMOVE
 
 ###############################
 # Stage Final
-FROM ruby:2.4.4-alpine3.7
+FROM ruby:2.5.1-alpine3.7
 LABEL maintainer="mauricio@mauriciovieira.net"
 
 ARG ADDITIONAL_PACKAGES
