@@ -15,7 +15,6 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
 
       # Find Docker IP address
       docker_ip = `/sbin/ip route|awk '/scope/ { print $7 }'`.strip
-      debugger
       Capybara.server_host = docker_ip
       Capybara.server_port = '3000'
       Capybara.app_host = "http://#{Capybara.current_session.server.host}:#{Capybara.current_session.server.port}"
