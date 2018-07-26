@@ -1,21 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  company_name: MyString
-  document: MyString
-  email: MyString
-  phone: MyString
-  user: one
-  notes: MyText
-  status: 1
+adam_smith:
+  name: Adam Smith
+  company_name: History
+  document: 368.542.478-53
+  email: adam.smith@history.example.com
+  phone: +358 40 1234-5678
+  user: john_smith
+  notes: Adam Smith is a client
+  status: active
 
-two:
-  name: MyString
-  company_name: MyString
-  document: MyString
-  email: MyString
-  phone: MyString
-  user: two
-  notes: MyText
-  status: 1
+john_titor:
+  name: John Titor
+  company_name: Future
+  document: 6c4f05f7-414a-4d06-b751-4787f2f8de26
+  email: john.titor@singularity.example.com
+  phone: 17D3Kaq1nvBsATEuq8YpPZoQnnkAdEarfK
+  user: john_smith
+  notes: John Titor is a visitor from the future. Beware
+  status: active

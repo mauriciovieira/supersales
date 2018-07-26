@@ -1,11 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  description: MyText
-  status: 1
+smartphone:
+  name: Smartphone
+  sku: SKU-001
+  description: Coolest phone ever
+  status: active
+  price: 200
 
-two:
-  name: MyString
-  description: MyText
-  status: 1
+tablet:
+  name: Tablet
+  sku: SKU-002
+  description: Coolest tablet!
+  status: active
+  price: 100
+

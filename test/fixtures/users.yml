@@ -1,15 +1,25 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  document: MyString
-  kind: 1
-  status: 1
-  notes: MyText
+john_smith:
+  name: John Smith
+  email: john.smith@example.com
+  document: 1CSJVj9pnnLuSJj14vPTFU6M1t4kc2uPUy
+  kind: salesperson
+  status: active
+  notes: About John Smith
 
-two:
-  name: MyString
-  document: MyString
-  kind: 1
-  status: 1
-  notes: MyText
+john_doe:
+  name: John Doe
+  email: john.doe@example.com
+  document: 17TLwmLi86F67Cd7pZMDvNmCy7zNYW5oA5
+  kind: salesperson
+  status: active
+  notes: About John Doe
+
+jane_doe:
+  name: Jane Doe
+  email: jane.doe@example.com
+  document: 1KUeQBd2DkefVKKP1JKqyvueMoPV1ZJ36N
+  kind: manager
+  status: active
+  notes: About Jane Doe

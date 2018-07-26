@@ -1,24 +1,16 @@
-# README
+# supersales
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![Build Status](https://travis-ci.org/mauriciovieira/supersales.svg?branch=master)](https://travis-ci.org/mauriciovieira/supersales)
 
-Things you may want to cover:
+Simple rails 5.2 application using rails_admin, devise, and native rails test setup.
 
-* Ruby version
+This project is an implementation of [Criando um sistema administrativo completo com rails admin](https://onebitcode.com/course/criando-um-sistema-administrativo-completo-com-rails-admin/) (in Brazilian Portuguese) tutorial.
 
-* System dependencies
+## Author
 
-* Configuration
+| ![Mauricio Vieira](https://avatars2.githubusercontent.com/u/95258?s=150&v=4)|
+|:---------------------:|
+|  [Mauricio Vieira](https://github.com/mauriciovieira/)   |
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
++ <https://mauriciovieira.net>
++ <https://twitter.com/mauriciovieira>
