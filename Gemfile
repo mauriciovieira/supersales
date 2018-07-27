@@ -21,6 +21,10 @@ gem 'active_record_upsert', '~> 0.9.1'
 
 gem 'high_voltage', '~> 3.1'
 
+gem 'bootstrap', '~> 4.1.3'
+gem 'devise-bootstrapped', '~> 0.1.1'
+gem 'jquery-rails'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
