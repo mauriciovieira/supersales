@@ -9,5 +9,5 @@ install: true # skip the installation step entirely
 
 script:
   - docker-compose -f docker-compose.test.yml pull
-  - docker-compose -f docker-compose.test.yml build
-  - docker-compose -f docker-compose.test.yml run --rm app sh -c "./docker/wait-for-services.sh && bundle exec rails db:create test:system"
+  - bin/rails docker:build
+  - bin/rails docker:test
