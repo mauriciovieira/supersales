@@ -4,6 +4,7 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
 
   def self.override_driven_by
     if ENV['SELENIUM_REMOTE_HOST']
+      # This is not working
       Capybara.configure do |config|
         config.default_driver = :selenium_chrome
         config.server_host = `/sbin/ip route|awk '/scope/ { print $7 }'`.strip
