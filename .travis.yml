@@ -1,13 +1,25 @@
+os: linux
 sudo: required
+dist: trusty
+env: DISPLAY=':99.0'
 
 language: ruby
 
-services:
-  - docker
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+      - chromium-chromedriver
 
-install: true # skip the installation step entirely
+before_script:
+  - wget http://chromedriver.storage.googleapis.com/2.36/chromedriver_linux64.zip
+  - unzip chromedriver_linux64.zip
+  - sudo cp chromedriver /usr/local/bin/
+  - sudo chmod +x /usr/local/bin/chromedriver
+  - sh -e /etc/init.d/xvfb start
+  - sleep 3
 
 script:
-  - docker-compose -f docker-compose.test.yml pull
-  - docker-compose -f docker-compose.test.yml build
-  - docker-compose -f docker-compose.test.yml run --rm app sh -c "./docker/wait-for-services.sh && bundle exec rails db:create test:system"
+  - bundle exec rails db:create test:system
