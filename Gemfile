@@ -13,7 +13,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
-gem 'devise', '~> 4.4.3'
+gem 'devise', '~> 4.7.1'
 gem 'rails_admin', '~> 1.3.0'
 gem 'cancancan', '~> 2.2.0'
 
