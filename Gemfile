@@ -21,7 +21,7 @@ gem 'active_record_upsert', '~> 0.9.1'
 
 gem 'high_voltage', '~> 3.1'
 
-gem 'bootstrap', '~> 4.1.3'
+gem 'bootstrap', '~> 4.3.1'
 gem 'devise-bootstrapped', '~> 0.1.1'
 gem 'jquery-rails'
 
