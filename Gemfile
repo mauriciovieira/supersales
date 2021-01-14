@@ -14,7 +14,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'devise', '~> 4.7.1'
-gem 'rails_admin', '~> 1.3.0'
+gem 'rails_admin', '~> 1.4.3'
 gem 'cancancan', '~> 2.2.0'
 
 gem 'active_record_upsert', '~> 0.9.1'
